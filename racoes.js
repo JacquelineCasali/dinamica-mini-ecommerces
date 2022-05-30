@@ -39,3 +39,4 @@ var especiedoanimal= racoes.filter((value)=>value.especie==="gato")
 console.log(especiedoanimal)
 
 
+modulo.export=racoes
