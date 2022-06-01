@@ -1,40 +1,49 @@
 var clientes = [
     {
-      id: 1,
-      nome: "Rogério Lucas",
-      sobrenome: "Silva",
-      idade: 30,
-      contato: "4002-8922",
+        id: 1,
+        nome: "Rogério Lucas",
+        sobrenome: "Silva",
+        idade: 30,
+        contato: "4002-8922",
     },
     {
-      id: 2,
-      nome: "Roberto Carlos",
-      sobrenome: "Braga",
-      idade: 70,
-      contato: "(11) 9 1111-1111",
+        id: 2,
+        nome: "Roberto Carlos",
+        sobrenome: "Braga",
+        idade: 70,
+        contato: "(11) 9 1111-1111",
     },
     {
-      id: 3,
-      nome: "Sylvester",
-      sobrenome: "Stallone",
-      idade: 80,
-      contato: "(22) 9 2222-2222",
+        id: 3,
+        nome: "Sylvester",
+        sobrenome: "Stallone",
+        idade: 80,
+        contato: "(22) 9 2222-2222",
     },
-  ];
+];
 //   3- Buscar por um cliente
 // Pegar id do cliente e retorna o mesmo e caso não exista retorne a mensagem "Cliente não encontrado"
 
-var idfiltrado=clientes.filter((letra)=> {
-  var idfora=""
-    if(letra.id>=5 && letra.idade<=10){
-       idfora="Cliente não encontrado"
+var idcliente =1
+var idfiltrado = clientes.find((cliente) => {
+    
+    if (cliente.id === idcliente) {
+        return true;
+    } else {
+        return false
     }
-    }    )
-    console.log(idfiltrado)
+})
+if(idfiltrado===undefined){
+    console.log("Cliente não encontrado")
+}else{
+    console.log(idfiltrado) 
+}
+
+
 
 
 //     var idxcliente= clientes.findIndex((cliente)=>{// findIndex retorna a posição do elemento
-//         if(cliente.id===id) {
+//         {
 //             return true
 //         }   else {
 //             return "Cliente não encontrado"
@@ -47,13 +56,9 @@ var idfiltrado=clientes.filter((letra)=> {
 //     console.log(clientes)
 // }
 
-//function listarclientes(identificador,cliente)
-// var te=clientes.filter((index,value)=>{
-//     if(index.id>=3){
-//                    return index.nome
-//     }
-// })
-// console.log(te)
+
+
+
 
 // 4- Cadastro de cliente
 // No array de clientes, adicione um objeto no final desse array e liste os clientes
