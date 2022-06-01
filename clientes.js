@@ -22,7 +22,9 @@ var clientes = [
     },
 ];
 //   3- Buscar por um cliente
-// Pegar id do cliente e retorna o mesmo e caso não exista retorne a mensagem "Cliente não encontrado"
+// Pegar id do cliente e retorna o mesmo e caso 
+//não exista retorne a mensagem "Cliente 
+//não encontrado"
 
 var idcliente =1
 var idfiltrado = clientes.find((cliente) => {
@@ -38,27 +40,6 @@ if(idfiltrado===undefined){
 }else{
     console.log(idfiltrado) 
 }
-
-
-
-
-//     var idxcliente= clientes.findIndex((cliente)=>{// findIndex retorna a posição do elemento
-//         {
-//             return true
-//         }   else {
-//             return "Cliente não encontrado"
-//         }
-//         })
-// console.log(idxcliente)
-
-//var identificador=clientes.filter(identificador)
-// if(clientes.id==id){
-//     console.log(clientes)
-// }
-
-
-
-
 
 // 4- Cadastro de cliente
 // No array de clientes, adicione um objeto no final desse array e liste os clientes
